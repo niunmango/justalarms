@@ -1,0 +1,19 @@
+html, body { height: 100%; padding: 0; margin: 0; font-family: sans-serif; font-size: 36pt; color: white; font-weight: bold;}
+div { width: 25%; height: 33.34%; float: left; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#A { background: green; }
+#B { background: green; }
+#C { background: red; }
+#D { background: green; }
+#E { background: green; }
+#F { background: green; }
+#G { background: green; }
+#H { background: green; }
+#I { background: green; }
+#J { background: green; }
+#K { background: green; }
+#L { background: green; }
