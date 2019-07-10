@@ -5,7 +5,7 @@ A simple monitor for network services.
 
 Add:
 
-*/1 * * * * /bin/bash /home/username/refresh.sh
+*/1 * * * * /bin/bash/home/username/refresh.sh
 
 to your cron
 
