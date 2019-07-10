@@ -44,15 +44,15 @@ function refresh.dns {
 
 
 refresh 8.8.8.8 A
-refresh 10.11.49.34 B
-refresh.dns 172.16.16.1 C
-refresh 10.11.49.4 D
-refresh.port 10.11.49.1 139 E
-refresh 10.11.49.35 F
-refresh 10.11.49.24 G
-refresh.port 10.11.49.8 6222 H
-refresh.port 10.11.49.8 25 I
-refresh 10.11.49.36 J
-refresh 10.11.49.110 K
-refresh.web www.salud.rionegro.gov.ar L
+refresh IPB B
+refresh.dns IPC C
+refresh IPD D
+refresh.port IPE 139 E
+refresh IPF F
+refresh IPG G
+refresh.port IPH 6222 H
+refresh.port IPI 25 I
+refresh IPJ J
+refresh IPK K
+refresh.web url.com L
 
