@@ -1,9 +1,8 @@
 #/bin/bash
-#nmap -sP --max-retries=1 --host-timeout=1500ms 10.0.0.1
-
 
 function refresh {
 #refresh IP PLACE
+#ICMP checks
 	if ping -c 1 -W 5 $1 &> /dev/null
 	then
 	  sed -i "s/#$2 { background: red; }/#$2 { background: green; }/g" styles.css
@@ -14,6 +13,7 @@ function refresh {
 
 function refresh.port {
 #refresh.port IP PORT PLACE
+#check if a certain port is open
         if nc -z -w5 $1 $2 &> /dev/null
         then
           sed -i "s/#$3 { background: red; }/#$3 { background: green; }/g" styles.css
@@ -24,6 +24,7 @@ function refresh.port {
 
 function refresh.web {
 #refresh.web IP PLACE
+#checks if a certain webpage is available
         if wget -q --spider $1 &> /dev/null
         then
           sed -i "s/#$2 { background: red; }/#$2 { background: green; }/g" styles.css
@@ -34,6 +35,7 @@ function refresh.web {
 
 function refresh.dns {
 #refresh.dns IP PLACE
+#checks if a DNS server is resolving names
         if dig www.google.com @$1 &> /dev/null
         then
           sed -i "s/#$2 { background: red; }/#$2 { background: green; }/g" styles.css
